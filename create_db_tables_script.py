@@ -32,3 +32,5 @@ conn.execute(
 
 conn.commit()
 conn.close()
+
+print("База данных успешно создана")
