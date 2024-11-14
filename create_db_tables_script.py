@@ -23,7 +23,7 @@ conn.execute(
             name VARCHAR(30) NOT NULL,
             description VARCHAR(150),
             img_url VARCHAR(150) NOT NULL,
-            price INTEGER NOT NULL,
+            price DECIMAL(8, 2),
             category_id INTEGER,
             FOREIGN KEY (category_id) REFERENCES categories(id)
         );
