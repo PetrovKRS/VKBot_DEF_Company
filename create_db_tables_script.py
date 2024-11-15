@@ -1,6 +1,10 @@
+import os
 import sqlite3
+import dotenv
 
-conn = sqlite3.connect('vk_bot_def_company.db')
+dotenv.load_dotenv()
+
+conn = sqlite3.connect(os.getenv('DB_NAME'))
 conn.cursor()
 
 # Создаем таблицу с категориями
