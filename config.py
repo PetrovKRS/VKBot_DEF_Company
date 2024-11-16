@@ -1,3 +1,0 @@
-VK_GROUP_TOKEN = 'vk1.a.sD7kVtbHp1aV1DS0afsDjCqydTnRCdikqMx0ZkXR5yHkk9cryU5AcnciLWGfNJMs3SlEKPNSI3vsTGc56blcnrBTYCZjV9qgKK5hXZ48WqFL8mkPgt96uH768u1xsAaI9aTGNJ27dQVdIUhlP90Y2C75rUwC8oe2-fSB8N03epEcIYTpKHqjBhiVruw3EasjUq2NWLvrTw5_GZuogiLobQ'
-VK_GROUP_ID = '228282732'
-DB_URL = 'sqlite:///vk_bot_def_company.db'
