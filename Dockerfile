@@ -10,9 +10,5 @@ COPY . /app
 # Устанавливаем зависимости
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Устанавливаем переменные окружения (можно переопределить через Docker Compose)
-ENV VK_GROUP_TOKEN=<your_vk_group_token>
-ENV VK_GROUP_ID=<your_vk_group_id>
-
 # Команда для запуска бота
 CMD ["python3", "bot.py"]

@@ -9,7 +9,7 @@ from states import UserState, create_state_machine
 
 dotenv.load_dotenv()
 
-vk_session = VkApi(token=os.getenv('VK_TOKEN'))
+vk_session = VkApi(token=os.getenv('VK_GROUP_TOKEN'))
 longpoll = VkBotLongPoll(vk_session, os.getenv('VK_GROUP_ID'))
 vk = vk_session.get_api()
 

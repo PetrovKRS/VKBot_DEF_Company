@@ -1,0 +1,13 @@
+
+services:
+  vk_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vk_bot
+    environment:
+      - VK_GROUP_TOKEN=${VK_GROUP_TOKEN}
+      - VK_GROUP_ID=${VK_GROUP_ID}
+    volumes:
+      - ./data:/app/data
+    restart: always
