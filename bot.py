@@ -1,13 +1,16 @@
+import os
 import json
+import dotenv
 from vk_api import VkApi
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 from database import Session, init_db, seed_data
 from models import Category, Product
 from states import UserState, create_state_machine
-from config import VK_GROUP_TOKEN, VK_GROUP_ID
 
-vk_session = VkApi(token=VK_GROUP_TOKEN)
-longpoll = VkBotLongPoll(vk_session, VK_GROUP_ID)
+dotenv.load_dotenv()
+
+vk_session = VkApi(token=os.getenv('VK_TOKEN'))
+longpoll = VkBotLongPoll(vk_session, os.getenv('VK_GROUP_ID'))
 vk = vk_session.get_api()
 
 users = {} # База для хранения состояний пользователей

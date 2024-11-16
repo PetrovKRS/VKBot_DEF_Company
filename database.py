@@ -1,9 +1,12 @@
+import os
+import dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base, Category, Product
-from config import DB_URL
 
-engine = create_engine(DB_URL, echo=True)
+dotenv.load_dotenv()
+
+engine = create_engine(os.getenv('DB_URL'), echo=True)
 Session = sessionmaker(bind=engine)
 
 def init_db():
