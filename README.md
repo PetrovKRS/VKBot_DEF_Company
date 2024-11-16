@@ -10,23 +10,17 @@
  - Навигация реализована с помощью кнопок
  - Пользователь может перемещаться по категориям
  - Данные хранятся в БД sqlite
- - реализована машина состояний при помощи библиотеки transitions
+ - Реализована машина состояний при помощи библиотеки transitions
+ - Реализован запуск проекта в Docker контейнере
 
 ### Установка и запуск 
-### Для запуска проекта на локальном компьтере в контейнерах:
+#### Для запуска проекта на локальном компьтере в контейнерах:
 - Cклонируйте репозиторий в рабочую папку:
-  ```
+  ```shell
   git clone git@github.com:PetrovKRS/VKBot_DEF_Company.git
   ```
-- Создайте в корне проекта .env файл и заполните его следующими данными (см. env_example.txt):
-  ```
-    VK_GROUP_TOKEN = '<your_vk_group_token>'
-    VK_GROUP_ID = '<your_vk_group_id>'
-    DB_URL = 'sqlite:///data/vk_bot.db'
-  ```
-
 - Установите docker compose
-  ```
+  ```shell
   sudo apt update
   sudo apt install curl
   curl -fsSL https://get.docker.com -o get-docker.sh
@@ -34,8 +28,24 @@
   sudo apt install docker-compose
   ```
 - Перейдите в корневую папку склонированного репозитория:
-- Запустите проект в docker контейнерах
+- Создайте в корне проекта .env файл и заполните его следующими данными (см. env_example.txt):
   ```
+    VK_GROUP_TOKEN = '<your_vk_group_token>'
+    VK_GROUP_ID = '<your_vk_group_id>'
+    DB_URL = 'sqlite:///data/vk_bot.db'
+  ```
+- Создайте виртуальное окружение:
+  ```shell    
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+- Установите зависимости:
+  ```shell
+  pip install --upgrade pip
+  pip install -r requirements.txt
+  ```
+- Запустите проект в docker контейнерах
+  ```shell
   sudo docker compose up --build
   ```
 - Для начала работы с ботом введите команду:
@@ -56,5 +66,3 @@
 ### Автор проекта: 
 [![GitHub](https://img.shields.io/badge/-Андрей_Петров-df?style=for-the-badge&logo=GitHub&labelColor=black&color=blue)](https://github.com/PetrovKRS)
 ***
-
-
