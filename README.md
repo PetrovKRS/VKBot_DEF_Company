@@ -12,6 +12,7 @@
  - Данные хранятся в БД sqlite
  - Реализована машина состояний при помощи библиотеки transitions
  - Реализован запуск проекта в Docker контейнере
+ - Реализованы тесты основног функционала бота на Pytest
 
 ### Установка и запуск 
 #### Для запуска проекта на локальном компьтере в контейнерах:
@@ -48,9 +49,25 @@
   ```shell
   sudo docker compose up --build
   ```
-- Для начала работы с ботом введите команду:
+- Запустить в контейнере скрипт создания БД и заполнения тестовыми данными:
+  ```shell
+  sudo docker compose exec vk_bot chmod +x start.sh
+  sudo docker compose exec vk_bot ./start.sh
+  ```
+- Для начала работы с ботом отправьте ему команду:
   ```
   Начать
+  ```
+  
+### В проекте реализованы следующие тесты:
+- Тест CRUD операций с базой данных.
+- Тест отправки сообщений через API.
+- Тест работы машины состояний.
+- Тест обработки команды "Начать" (команда для начала работы с ботом)
+- 
+#### для запуска тестов с указанием процента покрытия
+  ```shell
+  pytest --cov -vv
   ```
 ***
 
@@ -61,6 +78,7 @@
 ![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-df?style=for-the-badge&logo=SQLAlchemy&labelColor=black&color=blue)
 ![Transitions](https://img.shields.io/badge/-Transitions-df?style=for-the-badge&logo=Transitions&labelColor=lightblue&color=blue)
 ![VK](https://img.shields.io/badge/-VK_API-df?style=for-the-badge&logo=VK_API&labelColor=lightblue&color=blue)
+![Pytest](https://img.shields.io/badge/-Pytest-df?style=for-the-badge&logo=Pytest&labelColor=lightblue&color=blue)
 
 ***
 ### Автор проекта: 
