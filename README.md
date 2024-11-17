@@ -66,6 +66,7 @@
 ![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-df?style=for-the-badge&logo=SQLAlchemy&labelColor=black&color=blue)
 ![Transitions](https://img.shields.io/badge/-Transitions-df?style=for-the-badge&logo=Transitions&labelColor=lightblue&color=blue)
 ![VK](https://img.shields.io/badge/-VK_API-df?style=for-the-badge&logo=VK_API&labelColor=lightblue&color=blue)
+![Pytest](https://img.shields.io/badge/-Pytest-df?style=for-the-badge&logo=Pytest&labelColor=lightblue&color=blue)
 
 ***
 ### Автор проекта: 
