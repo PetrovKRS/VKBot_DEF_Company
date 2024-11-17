@@ -129,6 +129,9 @@ def handle_event(event, msg=None):
 
 def main():
     """ Главная функция для запуска бота """
+
+    print('Бот запущен. Ожидание сообщений...')
+
     for event in longpoll.listen():
         if event.type == VkBotEventType.MESSAGE_NEW:
             handle_event(event)
