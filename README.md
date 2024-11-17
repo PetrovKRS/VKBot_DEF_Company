@@ -48,10 +48,10 @@
   ```shell
   sudo docker compose up --build
   ```
-- Запустить в контейнере скрипты создания БД и заполнения тестовыми данными:
+- Запустить в контейнере скрипт создания БД и заполнения тестовыми данными:
   ```shell
-  sudo docker compose exec vk_bot python3 init_db.py
-  sudo docker compose exec vk_bot python3 seed_data.py
+  sudo docker compose exec vk_bot chmod +x start.sh
+  sudo docker compose exec vk_bot ./start.sh
   ```
 - Для начала работы с ботом отправьте ему команду:
   ```
