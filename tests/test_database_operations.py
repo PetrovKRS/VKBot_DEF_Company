@@ -6,7 +6,8 @@ from models import Product, Category  # Импорты ваших моделей
 
 @pytest.fixture
 def db_session():
-    """Фикстура для создания временной базы данных и сессии."""
+    """ Фикстура для создания временной базы данных и сессии. """
+
     # Создаем временную базу данных в памяти
     engine = create_engine("sqlite:///:memory:")
     init_db(engine)  # Инициализация схемы базы данных
@@ -19,7 +20,8 @@ def db_session():
 
 
 def test_database_operations(db_session):
-    """Тест CRUD операций с базой данных."""
+    """ Тест CRUD операций с базой данных. """
+
     # Создаем категорию
     category = Category(name="Тестовая категория")
     db_session.add(category)
