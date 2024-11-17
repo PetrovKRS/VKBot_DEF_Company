@@ -1,4 +1,5 @@
 import os
+import random
 import json
 import dotenv
 from vk_api import VkApi
@@ -21,7 +22,7 @@ def send_message(user_id, message, keyboard=None):
     vk.messages.send(
         user_id=user_id,
         message=message,
-        random_id=0,
+        random_id=random.randint(1, 100000),
         keyboard=keyboard
     )
 

@@ -13,7 +13,7 @@ def test_handle_event_start(mocker):
     handle_event(mock_event)
 
     send_mock.assert_called_once_with(
-        user_id=1,
-        message="Выберите категорию:",
-        keyboard="[]"
+        1,  # user_id
+        "Выберите категорию:",
+        '{"one_time": false, "buttons": []}'  # JSON-строка для keyboard
     )

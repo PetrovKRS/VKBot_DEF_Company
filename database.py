@@ -9,7 +9,7 @@ dotenv.load_dotenv()
 engine = create_engine(os.getenv('DB_URL'), echo=True)
 Session = sessionmaker(bind=engine)
 
-def init_db():
+def init_db(engine):
     """ Создание таблиц в БД. """
     Base.metadata.create_all(engine)
 
