@@ -73,13 +73,13 @@
 
 ### <b> Стек технологий: </b>
 
-![Python](https://img.shields.io/badge/-Python_3.12-df?style=for-the-badge&logo=Python&labelColor=yellow&color=blue).
-![DOCKER](https://img.shields.io/badge/-DOCKER-df?style=for-the-badge&logo=DOCKER&labelColor=lightblue&color=blue).
-![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-df?style=for-the-badge&logo=SQLAlchemy&labelColor=black&color=blue).
-![Transitions](https://img.shields.io/badge/-Transitions-df?style=for-the-badge&logo=Transitions&labelColor=lightblue&color=blue).
-![VK](https://img.shields.io/badge/-VK_API-df?style=for-the-badge&logo=VK_API&labelColor=lightblue&color=blue).
-![Pytest](https://img.shields.io/badge/-Pytest-df?style=for-the-badge&logo=Pytest&labelColor=lightblue&color=blue).
-![SQLite](https://img.shields.io/badge/-SQLite-df?style=for-the-badge&logo=SQLite&labelColor=lightblue&color=blue).
+![Python](https://img.shields.io/badge/-Python_3.12-df?style=for-the-badge&logo=Python&labelColor=yellow&color=blue)
+![DOCKER](https://img.shields.io/badge/-DOCKER-df?style=for-the-badge&logo=DOCKER&labelColor=lightblue&color=blue)
+![SQLAlchemy](https://img.shields.io/badge/-SQLAlchemy-df?style=for-the-badge&logo=SQLAlchemy&labelColor=black&color=blue)
+![Transitions](https://img.shields.io/badge/-Transitions-df?style=for-the-badge&logo=Transitions&labelColor=lightblue&color=blue)
+![VK](https://img.shields.io/badge/-VK_API-df?style=for-the-badge&logo=VK_API&labelColor=lightblue&color=blue)
+![Pytest](https://img.shields.io/badge/-Pytest-df?style=for-the-badge&logo=Pytest&labelColor=lightblue&color=blue)
+![SQLite](https://img.shields.io/badge/-SQLite-df?style=for-the-badge&logo=SQLite&labelColor=lightblue&color=blue)
 
 ***
 ### Автор проекта: 
