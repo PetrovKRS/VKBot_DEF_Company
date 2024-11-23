@@ -11,5 +11,6 @@ if [ -f "data/vk_bot_def_company.db" ]; then
 else
   python3 init_db.py
   python3 seed_data.py
+fi
 
 python3 boy.py
